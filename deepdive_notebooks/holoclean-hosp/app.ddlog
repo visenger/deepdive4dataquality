@@ -1,0 +1,212 @@
+
+tuple (
+	tid bigint
+).
+
+domain (
+	tid bigint,
+	attr int,
+	domain text
+).
+
+initvalue (
+	tid bigint,
+	attr int,
+	value text
+).
+
+
+#extdict (
+#	tid bigint,
+#	attr int,
+#	value text,
+#	dict int
+#).
+
+#matched? (
+#	tid bigint,
+#	attr int,
+#	value text,
+#	dict int
+#).
+
+value? (
+	tid bigint,
+	attr int,
+	value text
+).
+
+@weight(0.5)
+value(t, a, d) :- domain(t, a, d).
+
+@weight(0.5)
+value(t, a, v) :- initvalue(t, a, v).
+
+
+# MD1: zip=ext_zip => state=ext_state
+# encoding rule for extdict: ext_zip:0, ext_city:1, ext_state:2
+# in matched encoding rules: Zip:ZipCode, State:State
+#@weight(1)
+#matched(t1, State, s2, k) :- domain(t1, State, s1), initvalue(t1, ZipCode, z1), extdict(t2, 0, z1, k), extdict(t2, 2, s2, k),[s1=s2].
+
+# MD2: zip=ext_zip => city=ext_city
+# encoding rule for extdict: ext_zip:0, ext_city:1, ext_state:2
+# in matched encoding rules: Zip:ZipCode, State:5
+#@weight(1)
+#matched(t1, 5, c2, k) :- domain(t1, 5, c1), initvalue(t1, ZipCode, z1), extdict(t2, 0, z1, k), extdict(t2, 1, c2, k),[c1=c2].
+
+#@weight(1)
+#value(t, a, v) :- matched(t, a, v, d).
+
+#@weight(0.5)
+#value(t, a, d) :- hasfeature(t, a, f).
+
+# FD1: Zip=>State
+# encoding rules: Zip:8, State:7
+
+@weight(1)
+!value(t1, 8, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 8, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t1, 7, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 7, s2) :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+# FD2: Zip=>City
+# encoding rules: Zip:8, City:6
+
+@weight(1)
+!value(t1, 8, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 8, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t1, 6, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 6, s2) :- tuple(t1), tuple(t2), initvalue(t1, 8, z1), initvalue(t2, 8, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+#FD3: phonenumber->zip
+# encoding: phonenumber:1 zip:8
+@weight(1)
+!value(t1, 1, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 8, c1), initvalue(t2, 8, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 1, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 8, c1), initvalue(t2, 8, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t1, 8, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 8, c1), initvalue(t2, 8, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 8, s2) :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 8, c1), initvalue(t2, 8, c2), [t1!=t2, z1=z2, c1!=c2].
+
+
+
+#FD4: phonenumber->city
+# encoding: phonenumber:1 city:6
+@weight(1)
+!value(t1, 1, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 1, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t1, 6, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+@weight(1)
+!value(t2, 6, s2) :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 6, c1), initvalue(t2, 6, c2), [t1!=t2, z1=z2, c1!=c2].
+
+#FD5: phonenumber->state
+# encoding: phonenumber:1 state:7
+@weight(1)
+!value(t1, 1, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 1, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t1, 7, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 7, s2) :- tuple(t1), tuple(t2), initvalue(t1, 1, z1), initvalue(t2, 1, z2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), [t1!=t2, z1=z2, s1!=s2].
+
+
+#FDState: MeasureCode->MeasureName
+#encoding: MeasureCode:15 MeasureName:16
+@weight(1)
+!value(t1, 15, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 16, s1), initvalue(t2, 16, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 15, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 16, s1), initvalue(t2, 16, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t1, 16, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 16, s1), initvalue(t2, 16, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 16, s2) :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 16, s1), initvalue(t2, 16, s2), [t1!=t2, z1=z2, s1!=s2].
+
+
+
+#FD7: MeasureCode->Condition
+# encoding: MeasureCode:15 Condition: 14
+@weight(1)
+!value(t1, 15, z1)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 14, s1), initvalue(t2, 14, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 15, z2)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 14, s1), initvalue(t2, 14, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t1, 14, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 14, s1), initvalue(t2, 14, s2), [t1!=t2, z1=z2, s1!=s2].
+
+@weight(1)
+!value(t2, 14, s2) :- tuple(t1), tuple(t2), initvalue(t1, 15, z1), initvalue(t2, 15, z2), initvalue(t1, 14, s1), initvalue(t2, 14, s2), [t1!=t2, z1=z2, s1!=s2].
+
+
+#FD8:State,MeasureCode->Stateavg
+#encoding: State:7, MeasureCode:15 ->Stateavg:19
+@weight(1)
+!value(t1, 7, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 7, s2)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+@weight(1)
+!value(t1, 15, m1)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 15, m2)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+@weight(1)
+!value(t1, 19, a1)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 19, a2)  :- tuple(t1), tuple(t2), initvalue(t1, 7, s1), initvalue(t2, 7, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1=m2, a1!=a2].
+
+
+#FD9:ProviderNumber->MeasureCode,Stateavg
+#encoding: ProviderNumber:2->MeasureCode:15,Stateavg:18
+
+@weight(1)
+!value(t1, 2, s1)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 2, s2)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+@weight(1)
+!value(t1, 15, m1)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 15, m2)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+@weight(1)
+!value(t1, 19, a1)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+@weight(1)
+!value(t2, 19, a2)  :- tuple(t1), tuple(t2), initvalue(t1, 2, s1), initvalue(t2, 2, s2), initvalue(t1, 15, m1), initvalue(t2, 15, m2), initvalue(t1, 19, a1), initvalue(t2, 19, a2), [t1!=t2, s1=s2, m1!=m2, a1!=a2].
+
+

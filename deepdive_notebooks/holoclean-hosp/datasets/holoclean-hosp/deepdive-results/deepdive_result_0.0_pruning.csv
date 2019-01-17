@@ -1,0 +1,549 @@
+ind,attr,val,expectation
+861,17,90%,0.683
+542,16,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.679
+167,18,10 patients,0.669
+653,3,209 NORTH MAIN STREET,0.669
+580,13,Yes,0.668
+374,19,AL_PN-6,0.667
+556,19,AL_AMI-3,0.666
+496,15,PN-3B,0.666
+764,16,Pneumonia Patients Assessed and Given Pneumococcal Vaccination,0.665
+623,19,AL_HF-4,0.665
+146,16,Heart Attack Patients Given Smoking Cessation Advice/Counseling,0.664
+66,10,2565938310,0.664
+589,18,75 patients,0.663
+464,16,Pneumonia Patients Given Initial Antibiotic(s) within 6 Hours After Arrival,0.663
+416,3,987 DRAYTON STREET,0.663
+291,16,Heart Attack Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival,0.662
+921,19,AL_SCIP-INF-3,0.662
+472,10,3347742601,0.662
+432,3,1256 MILITARY STREET SOUTH,0.662
+589,16,Heart Failure Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD),0.662
+58,3,2505 U S HIGHWAY 431 NORTH,0.661
+737,3,1000 FIRST STREET NORTH,0.661
+348,19,AL_PN-4,0.661
+736,15,SCIP-VTE-1,0.661
+348,19,AL_PN-5C,0.661
+647,19,AL_AMI-4,0.66
+568,19,AL_AMI-8A,0.66
+121,15,SCIP-INF-1,0.66
+935,3,702 N MAIN ST,0.659
+946,3,4800 48TH ST,0.659
+211,16,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.659
+916,3,124 S MEMORIAL DR,0.659
+508,16,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.659
+351,3,1720 UNIVERSITY BLVD,0.659
+448,16,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),0.659
+707,16,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery,0.659
+679,19,AL_PN-5C,0.659
+928,16,Children and their Caregivers Who Received a Home Management Plan of Care Document While Hospitalized for Asthma,0.659
+692,15,PN-6,0.658
+427,17,Empty,0.658
+253,17,Empty,0.658
+761,19,AL_SCIP-INF-4,0.658
+649,15,SCIP-INF-3,0.658
+772,16,Pneumonia Patients Given the Most Appropriate Initial Antibiotic(s),0.658
+975,14,Heart Attack,0.658
+770,17,0%,0.658
+680,14,Surgical Infection Prevention,0.658
+730,15,AMI-8A,0.657
+920,13,Yes,0.657
+717,14,Heart Failure,0.657
+494,16,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.657
+95,3,124 S MEMORIAL DR,0.657
+695,15,AMI-7A,0.657
+664,16,surgery patients who were given the  right kind  of antibiotic to help prevent infection,0.657
+99,11,Acute Care Hospitals,0.657
+777,18,511 patients,0.657
+70,19,AL_PN-7,0.657
+768,3,8000 ALABAMA HIGHWAY 69,0.657
+922,2,RIVERVIEW REGIONAL MEDICAL CENTER,0.657
+162,3,4370 WEST MAIN STREET,0.656
+371,19,AL_SCIP-INF-3,0.656
+739,16,Pneumonia Patients Given Smoking Cessation Advice/Counseling,0.656
+239,9,DE KALB,0.656
+673,16,Pneumonia Patients Assessed and Given Influenza Vaccination,0.656
+846,18,16 patients,0.656
+674,15,HF-3,0.656
+957,3,987 DRAYTON STREET,0.656
+162,3,2505 U S HIGHWAY 431 NORTH,0.656
+957,3,4370 WEST MAIN STREET,0.656
+371,19,AL_PN-6,0.656
+669,18,324 patients,0.655
+858,3,849 SOUTH THREE NOTCH STREET,0.655
+714,16,Heart Attack Patients Given Aspirin at Arrival,0.655
+42,16,Pneumonia Patients Assessed and Given Pneumococcal Vaccination,0.655
+843,15,HF-2,0.655
+581,15,SCIP-VTE-2,0.655
+850,3,315 W HICKORY ST,0.655
+142,16,Pneumonia Patients Whose Initial Emergency Room Blood Culture Was Performed Prior To The Administration Of The First Hospital Dose Of Antibiotics,0.655
+235,18,56 patients,0.655
+786,16,Pneumonia Patients Assessed and Given Pneumococcal Vaccination,0.655
+978,16,Heart Attack Patients Given Aspirin at Arrival,0.655
+6,16,Heart Failure Patients Given an Evaluation of Left Ventricular Systolic (LVS) Function,0.655
+377,16,Pneumonia Patients Given Initial Antibiotic(s) within 6 Hours After Arrival,0.654
+107,3,1108 ROSS CLARK CIRCLE,0.654
+364,3,515 MIRANDA ST,0.654
+102,15,SCIP-CARD-2,0.654
+873,18,78 patients,0.654
+245,19,AL_SCIP-INF-2,0.654
+230,14,Heart Attack,0.654
+485,3,1256 MILITARY STREET SOUTH,0.654
+722,19,AL_AMI-3,0.653
+953,16,Pneumonia Patients Assessed and Given Influenza Vaccination,0.653
+765,19,AL_SCIP-INF-6,0.653
+67,16,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.653
+563,16,Heart Attack Patients Given Aspirin at Discharge,0.653
+267,16,Pneumonia Patients Given the Most Appropriate Initial Antibiotic(s),0.653
+296,3,619 SOUTH 19TH STREET,0.653
+261,3,810 ST VINCENTS DRIVE,0.653
+987,3,2000 PEPPERELL PARKWAY,0.653
+296,3,400 N EDWARDS STREET,0.653
+171,18,64 patients,0.653
+556,14,Pneumonia,0.652
+410,15,AMI-4,0.652
+120,16,Heart Failure Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD),0.652
+337,17,99%,0.652
+225,18,15 patients,0.652
+346,16,Pneumonia Patients Given Initial Antibiotic(s) within 6 Hours After Arrival,0.652
+546,16,Heart Attack Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival,0.652
+514,16,Heart Attack Patients Given Aspirin at Discharge,0.652
+98,15,SCIP-CARD-2,0.652
+282,16,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.652
+394,3,2451 FILLINGIM STREET,0.652
+112,16,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.652
+825,16,Heart Failure Patients Given Discharge Instructions,0.652
+775,15,SCIP-INF-2,0.652
+651,16,Pneumonia Patients Given Smoking Cessation Advice/Counseling,0.651
+677,15,HF-3,0.651
+265,3,200 MED CENTER DRIVE,0.651
+412,3,1256 MILITARY STREET SOUTH,0.651
+803,16,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.651
+719,17,97%,0.651
+533,16,Heart Attack Patients Given Aspirin at Arrival,0.651
+178,15,AMI-3,0.651
+894,16,Heart Attack Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival,0.651
+614,16,Heart Failure Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD),0.65
+92,18,130 patients,0.65
+335,3,600 SOUTH THIRD STREET,0.65
+390,16,Pneumonia Patients Whose Initial Emergency Room Blood Culture Was Performed Prior To The Administration Of The First Hospital Dose Of Antibiotics,0.65
+292,16,Pneumonia Patients Given Smoking Cessation Advice/Counseling,0.65
+936,3,805 FRIENDSHIP ROAD,0.65
+522,13,Yes,0.65
+242,16,Heart Failure Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD),0.65
+828,19,AL_PN-2,0.65
+528,9,MONTGOMERY,0.65
+866,10,2059216200,0.65
+473,3,126 HOSPITAL AVE,0.65
+192,16,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.649
+699,17,97%,0.649
+276,3,1300 SOUTH MONTGOMERY AVENUE,0.649
+164,17,98%,0.649
+788,19,AL_CAC-1,0.649
+214,19,AL_PN-7,0.649
+562,10,3342938000,0.649
+963,2,MEDICAL CENTER ENTERPRISE,0.649
+489,17,66%,0.649
+561,2,JACKSON HOSPITAL & CLINIC INC,0.649
+192,16,Pneumonia Patients Assessed and Given Influenza Vaccination,0.649
+317,3,2000 PEPPERELL PARKWAY,0.649
+533,18,254 patients,0.649
+998,16,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.648
+889,17,89%,0.648
+652,16,Pneumonia Patients Whose Initial Emergency Room Blood Culture Was Performed Prior To The Administration Of The First Hospital Dose Of Antibiotics,0.648
+507,17,94%,0.648
+463,18,142 patients,0.648
+750,15,PN-7,0.648
+870,14,Pneumonia,0.648
+238,17,99%,0.647
+159,17,97%,0.647
+555,18,817 patients,0.647
+474,16,Pneumonia Patients Given the Most Appropriate Initial Antibiotic(s),0.647
+367,14,Heart Failure,0.647
+392,15,AMI-8A,0.647
+797,19,AL_AMI-5,0.647
+524,18,77 patients,0.647
+176,3,50 MEDICAL PARK EAST DRIVE,0.647
+875,16,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.647
+800,16,Heart Attack Patients Given Aspirin at Arrival,0.647
+92,16,surgery patients who were given the  right kind  of antibiotic to help prevent infection,0.647
+843,19,AL_AMI-2,0.647
+194,19,AL_PN-7,0.647
+1,16,Pneumonia Patients Assessed and Given Influenza Vaccination,0.647
+257,16,Heart Failure Patients Given Smoking Cessation Advice/Counseling,0.646
+445,18,223 patients,0.646
+903,16,Heart Attack Patients Given Aspirin at Arrival,0.646
+109,15,HF-3,0.646
+498,11,Acute Care Hospitals,0.646
+906,18,268 patients,0.646
+689,16,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.646
+817,16,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.646
+117,16,Heart Attack Patients Given Aspirin at Discharge,0.646
+973,18,37 patients,0.646
+399,15,PN-5C,0.646
+57,19,AL_PN-7,0.646
+280,14,Heart Failure,0.646
+674,18,316 patients,0.646
+712,17,93%,0.645
+789,15,SCIP-VTE-2,0.645
+589,11,Acute Care Hospitals,0.645
+435,16,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,0.645
+640,15,HF-2,0.645
+547,18,827 patients,0.645
+900,16,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.645
+217,16,surgery patients who were given the  right kind  of antibiotic to help prevent infection,0.645
+116,18,59 patients,0.645
+249,19,AL_HF-4,0.645
+347,16,Pneumonia Patients Given the Most Appropriate Initial Antibiotic(s),0.644
+866,15,PN-7,0.644
+18,18,139 patients,0.644
+319,13,Yes,0.644
+931,15,SCIP-CARD-2,0.644
+219,12,Voluntary non-profit - Private,0.644
+931,15,SCIP-INF-1,0.644
+904,2,RIVERVIEW REGIONAL MEDICAL CENTER,0.644
+220,16,Heart Failure Patients Given Smoking Cessation Advice/Counseling,0.644
+355,18,19 patients,0.644
+565,19,AL_HF-1,0.644
+386,2,UNIV OF SOUTH ALABAMA MEDICAL CENTER,0.644
+639,16,Heart Attack Patients Given Aspirin at Discharge,0.644
+497,18,0 patients,0.643
+270,19,AL_SCIP-INF-3,0.643
+406,17,90%,0.643
+121,17,47%,0.643
+257,17,86%,0.643
+632,14,Surgical Infection Prevention,0.643
+449,2,ALASKA REGIONAL HOSPITAL,0.643
+613,16,Heart Attack Patients Given Beta Blocker at Discharge,0.643
+281,11,Acute Care Hospitals,0.643
+706,16,Heart Attack Patients Given Aspirin at Discharge,0.643
+780,11,Acute Care Hospitals,0.642
+209,17,91%,0.642
+600,14,Heart Failure,0.642
+564,16,Pneumonia Patients Whose Initial Emergency Room Blood Culture Was Performed Prior To The Administration Of The First Hospital Dose Of Antibiotics,0.642
+239,17,93%,0.642
+579,9,CHAMBERS,0.642
+214,11,Acute Care Hospitals,0.641
+515,17,83%,0.641
+515,17,89%,0.641
+222,12,Voluntary non-profit - Church,0.641
+756,1,10036,0.641
+489,16,Pneumonia Patients Given Smoking Cessation Advice/Counseling,0.641
+191,15,PN-2,0.641
+134,18,8 patients,0.64
+646,1,10032,0.64
+922,13,Yes,0.64
+134,18,9 patients,0.64
+134,18,4 patients,0.64
+414,18,125 patients,0.64
+188,17,91%,0.64
+379,17,82%,0.64
+237,14,Heart Attack,0.639
+539,16,Heart Attack Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival,0.639
+539,16,Heart Failure Patients Given an Evaluation of Left Ventricular Systolic (LVS) Function,0.639
+539,16,Heart Failure Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD),0.639
+675,13,Yes,0.639
+325,9,CALHOUN,0.639
+503,18,Empty,0.639
+593,7,AL,0.639
+752,10,3342228466,0.639
+414,11,Acute Care Hospitals,0.639
+478,19,AL_PN-4,0.639
+785,12,Government - Hospital District or Authority,0.638
+956,14,Surgical Infection Prevention,0.638
+778,2,HUNTSVILLE HOSPITAL,0.638
+927,11,Acute Care Hospitals,0.638
+465,15,SCIP-INF-2,0.638
+465,15,SCIP-CARD-2,0.638
+403,7,AL,0.637
+167,16,Heart Attack Patients Given Fibrinolytic Medication Within 30 Minutes Of Arrival,0.637
+200,14,Heart Failure,0.637
+847,12,Voluntary non-profit - Private,0.637
+229,7,AL,0.637
+581,18,1 patients,0.637
+581,18,164 patients,0.637
+370,14,Heart Attack,0.637
+23,12,Government - Hospital District or Authority,0.637
+257,14,Heart Failure,0.637
+43,7,AL,0.636
+483,18,80 patients,0.636
+419,18,51 patients,0.636
+867,18,78 patients,0.636
+753,9,COVINGTON,0.636
+719,15,AMI-8A,0.636
+719,15,SCIP-VTE-2,0.636
+505,7,AL,0.636
+873,12,Voluntary non-profit - Private,0.636
+183,7,AL,0.636
+381,16,Heart Failure Patients Given an Evaluation of Left Ventricular Systolic (LVS) Function,0.636
+517,10,3342882100,0.635
+786,9,MADISON,0.635
+388,19,AL_HF-3,0.635
+357,12,Proprietary,0.635
+226,14,Surgical Infection Prevention,0.635
+17,11,Acute Care Hospitals,0.635
+917,10,2565435200,0.634
+137,9,CRENSHAW,0.634
+222,9,DE KALB,0.634
+654,13,No,0.634
+494,12,Voluntary non-profit - Private,0.634
+512,11,Acute Care Hospitals,0.634
+950,11,Acute Care Hospitals,0.634
+731,9,CULLMAN,0.634
+629,13,Yes,0.633
+713,14,Heart Failure,0.633
+514,9,CHEROKEE,0.633
+23,14,Heart Attack,0.633
+781,14,Pneumonia,0.633
+781,14,Heart Attack,0.633
+792,7,AL,0.633
+713,14,Pneumonia,0.633
+22,14,Pneumonia,0.632
+759,2,ANDALUSIA REGIONAL HOSPITAL,0.632
+609,14,Heart Failure,0.632
+128,14,Surgical Infection Prevention,0.632
+896,9,FAYETTE,0.632
+248,10,3346366221,0.632
+217,12,Voluntary non-profit - Private,0.632
+494,11,Acute Care Hospitals,0.632
+84,7,AL,0.631
+573,10,3347561400,0.631
+493,13,Yes,0.631
+507,14,Surgical Infection Prevention,0.631
+609,1,10027,0.631
+852,14,Heart Attack,0.631
+731,2,CULLMAN REGIONAL MEDICAL CENTER,0.63
+702,7,AL,0.63
+781,1,10039,0.63
+52,13,Yes,0.63
+640,1,10029,0.63
+25,13,Yes,0.629
+468,14,Surgical Infection Prevention,0.629
+693,9,ELMORE,0.629
+401,14,Heart Attack,0.629
+458,9,JEFFERSON,0.629
+766,2,ANDALUSIA REGIONAL HOSPITAL,0.629
+705,1,10034,0.629
+798,13,Yes,0.629
+667,10,2059344011,0.629
+262,10,3346366221,0.628
+240,14,Surgical Infection Prevention,0.628
+478,7,AL,0.628
+333,12,Proprietary,0.628
+244,2,DEKALB REGIONAL MEDICAL CENTER,0.627
+279,7,AL,0.627
+47,7,AL,0.627
+903,11,Acute Care Hospitals,0.627
+730,11,Acute Care Hospitals,0.627
+696,11,Acute Care Hospitals,0.627
+361,1,10086,0.627
+790,1,10039,0.626
+218,10,2058383122,0.626
+102,10,3344933541,0.626
+878,11,Acute Care Hospitals,0.626
+163,12,Proprietary,0.626
+387,10,2514717110,0.626
+43,12,Government - Hospital District or Authority,0.626
+699,9,ELMORE,0.625
+172,2,MARSHALL MEDICAL CENTER NORTH,0.625
+588,13,Yes,0.625
+253,9,CLARKE,0.625
+14,1,10019,0.625
+99,7,AL,0.625
+228,9,DE KALB,0.625
+350,15,AMI-5,0.625
+28,12,Government - Hospital District or Authority,0.625
+61,10,2565938310,0.624
+884,10,2059325966,0.624
+560,7,AL,0.624
+114,12,Voluntary non-profit - Private,0.624
+419,13,No,0.624
+239,12,Voluntary non-profit - Church,0.624
+46,1,10005,0.624
+869,12,Voluntary non-profit - Private,0.624
+711,2,COMMUNITY HOSPITAL INC,0.624
+347,9,HOUSTON,0.624
+882,10,2059325966,0.624
+887,7,AL,0.624
+849,11,Acute Care Hospitals,0.624
+783,11,Acute Care Hospitals,0.623
+552,9,MONTGOMERY,0.623
+745,12,Proprietary,0.623
+32,12,Government - Hospital District or Authority,0.623
+294,11,Acute Care Hospitals,0.623
+484,7,AL,0.622
+890,13,Yes,0.622
+533,11,Acute Care Hospitals,0.622
+541,9,MONTGOMERY,0.621
+333,13,Yes,0.621
+934,1,10047,0.621
+699,14,Surgical Infection Prevention,0.621
+274,1,10016,0.621
+734,14,Pneumonia,0.621
+549,10,3342938000,0.621
+734,14,Heart Attack,0.621
+537,13,Yes,0.62
+965,11,Acute Care Hospitals,0.62
+815,11,Acute Care Hospitals,0.62
+799,9,MADISON,0.62
+889,1,10045,0.62
+200,11,Acute Care Hospitals,0.62
+491,11,Acute Care Hospitals,0.62
+25,10,3347938701,0.62
+74,14,Heart Failure,0.619
+74,14,Heart Attack,0.619
+322,10,2562358900,0.619
+27,2,SOUTHEAST ALABAMA MEDICAL CENTER,0.619
+390,13,Yes,0.619
+214,1,10011,0.619
+696,14,Surgical Infection Prevention,0.619
+635,11,Acute Care Hospitals,0.619
+457,12,Government - Hospital District or Authority,0.619
+382,10,2514717110,0.619
+120,7,AL,0.619
+387,7,AL,0.618
+944,9,BUTLER,0.618
+765,7,AL,0.618
+229,10,2568453150,0.618
+248,12,Government - Federal,0.618
+860,1,10044,0.617
+700,10,3342836541,0.617
+267,11,Acute Care Hospitals,0.617
+328,13,Yes,0.617
+977,11,Acute Care Hospitals,0.617
+450,12,Proprietary,0.616
+224,9,DE KALB,0.616
+452,3,PO BOX 287,0.616
+37,10,3347938701,0.616
+725,1,10035,0.616
+387,14,Pneumonia,0.615
+879,1,10045,0.615
+466,9,JEFFERSON,0.615
+165,12,Proprietary,0.615
+503,9,CHEROKEE,0.614
+68,9,MARSHALL,0.614
+343,10,3347935000,0.614
+457,9,JEFFERSON,0.614
+338,2,FLOWERS HOSPITAL,0.614
+254,1,10015,0.614
+673,9,JEFFERSON,0.613
+158,12,Proprietary,0.613
+385,2,UNIV OF SOUTH ALABAMA MEDICAL CENTER,0.613
+160,12,Proprietary,0.613
+988,2,ST VINCENTS BLOUNT,0.613
+594,10,3348972257,0.613
+245,1,10015,0.613
+656,1,10032,0.613
+573,7,AL,0.612
+655,2,WEDOWEE HOSPITAL,0.612
+411,13,Yes,0.612
+385,10,2514717110,0.612
+956,1,10049,0.611
+764,10,3342228466,0.611
+313,9,CALHOUN,0.611
+714,10,3342836541,0.611
+698,2,COMMUNITY HOSPITAL INC,0.611
+44,13,Yes,0.611
+825,10,2564944000,0.611
+141,7,AL,0.611
+722,1,10035,0.61
+723,9,CULLMAN,0.61
+563,10,3342938000,0.61
+560,1,10024,0.61
+375,13,Yes,0.61
+533,2,BAPTIST MEDICAL CENTER SOUTH,0.61
+634,9,LEE,0.61
+918,9,ETOWAH,0.61
+454,11,Acute Care Hospitals,0.609
+591,9,CHAMBERS,0.609
+409,1,10108,0.609
+706,11,Acute Care Hospitals,0.609
+628,1,10029,0.609
+315,1,10038,0.608
+794,1,10039,0.608
+78,9,LAUDERDALE,0.607
+867,13,Yes,0.607
+158,13,Yes,0.607
+565,13,Yes,0.606
+603,9,COFFEE,0.606
+82,1,10006,0.606
+357,7,AL,0.605
+73,9,LAUDERDALE,0.604
+967,9,COFFEE,0.604
+885,7,AL,0.604
+573,12,Voluntary non-profit - Other,0.604
+923,7,AL,0.603
+923,2,RIVERVIEW REGIONAL MEDICAL CENTER,0.603
+527,12,Voluntary non-profit - Church,0.602
+132,2,CRENSHAW COMMUNITY HOSPITAL,0.602
+856,10,2059216200,0.602
+939,2,GEORGIANA HOSPITAL,0.6
+314,12,Proprietary,0.6
+217,9,JEFFERSON,0.599
+51,7,AL,0.599
+810,13,Yes,0.598
+166,7,AL,0.597
+690,9,JEFFERSON,0.595
+40,11,Acute Care Hospitals,0.594
+197,8,35235,0
+80,6,FLORENCE,0
+150,8,35640,0
+208,6,BIRMINGHAM,0
+233,8,35968,0
+376,8,35594,0
+429,8,35150,0
+816,8,35903,0
+438,6,ANCHORAGE,0
+655,6,WEDOWEE,0
+500,8,35960,0
+158,8,35640,0
+229,6,FORT PAYNE,0
+491,8,36360,0
+11,6,SHEFFIELD,0
+961,6,ENTERPRISE,0
+751,8,36420,0
+697,6,TALLASSEE,0
+181,6,GUNTERSVILLE,0
+71,8,35631,0
+686,8,35233,0
+591,6,VALLEY,0
+94,6,FLORENCE,0
+545,8,36106,0
+368,6,WINFIELD,0
+680,8,35233,0
+691,6,BIRMINGHAM,0
+896,6,FAYETTE,0
+213,6,BIRMINGHAM,0
+475,6,OZARK,0
+89,6,FLORENCE,0
+969,6,ENTERPRISE,0
+291,8,35007,0
+986,6,ONEONTA,0
+45,8,35957,0
+57,6,BOAZ,0
+950,6,GEORGIANA,0
+579,6,VALLEY,0
+341,8,36305,0
+407,8,36067,0
+326,8,36201,0
+284,8,35007,0
+64,8,35957,0
+711,8,36078,0
+421,8,35150,0
+602,6,ELBA,0
+856,6,HAMILTON,0
+94,8,35631,0
+4,6,BIRMINGHAM,0
+140,8,36049,0
+924,8,35901,0
+367,8,35594,0
+486,6,OZARK,0
+8,6,BIRMINGHAM,0
+333,8,36305,0
+268,8,36784,0
+518,6,MONTGOMERY,0
+822,6,GADSDEN,0
+138,8,36049,0
+757,6,ANDALUSIA,0
+773,6,ANNISTON,0
+312,6,ANNISTON,0
